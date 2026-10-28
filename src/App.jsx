@@ -356,7 +356,7 @@ function App() {
       <section id="ceremonies" className="ceremony-section section-pad">
         <div className="section-heading light-heading">
           <span className="section-kicker">13 · 05 · 2027</span>
-          <h2>{t.schedule}</h2>
+          <h3>{t.schedule}</h3>
           <p>
             {lang === "en"
               ? "A day of blessings, promises and the beginning of forever."
