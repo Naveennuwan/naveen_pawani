@@ -152,28 +152,28 @@ function App() {
     player.loop = true;
     player.volume = 0.35;
     player.preload = "auto";
-  
+
     setAudio(player);
-  
+
     // Keep the music state in sync with playback.
     player.addEventListener("play", () => setMusicOn(true));
     player.addEventListener("pause", () => setMusicOn(false));
-  
+
     // Attempt autoplay. Browsers may block this.
     player.play().catch(() => {
       setMusicOn(false);
       console.log("Music will start after visitor interaction.");
     });
-  
+
     return () => {
       player.pause();
       player.src = "";
     };
   }, []);
-  
+
   const startMusic = async () => {
     if (!audio) return;
-  
+
     try {
       await audio.play();
       setMusicOn(true);
@@ -182,10 +182,10 @@ function App() {
       console.warn("Unable to start music:", error);
     }
   };
-  
+
   const toggleMusic = async () => {
     if (!audio) return;
-  
+
     if (!audio.paused) {
       audio.pause();
       setMusicOn(false);
@@ -193,7 +193,7 @@ function App() {
       await startMusic();
     }
   };
-  
+
   const openInvitation = async () => {
     setOpened(true);
     await startMusic();
@@ -222,9 +222,11 @@ function App() {
                 <Lotus className="opening-lotus" />
                 <span className="tiny-caps">{t.seal}</span>
                 {/* <h1>N <span>&</span> P</h1> */}
-                <p className="envelope-names">{t.grromShortName} & {t.brideShortName}</p>
+                <p className="envelope-names">
+                  {t.grromShortName} & {t.brideShortName}
+                </p>
                 {/* <div className="wax-seal"> */}
-                  {/* N<span>✦</span>P */}
+                {/* N<span>✦</span>P */}
                 {/* </div> */}
                 <button className="open-button" onClick={openInvitation}>
                   {t.open} <span aria-hidden="true">↗</span>
@@ -241,8 +243,7 @@ function App() {
           className="monogram"
           onClick={() => scrollTo("home")}
           aria-label="Go to top"
-        >
-        </button>
+        ></button>
         <div className="top-actions">
           <button
             className="utility"
@@ -329,11 +330,10 @@ function App() {
             viewport={{ once: true }}
           >
             <span className="card-index"></span>
-            <h3>
-            {t.grromFullName}
-            </h3>
-            <div className="card-rule"></div>
             <p>{t.groomParents}</p>
+            <br />
+            <div className="card-rule"></div>
+            <h3>{t.grromFullName}</h3>
           </motion.article>
           <div className="between-mark">
             <Heart size={20} strokeWidth={1} />
@@ -345,9 +345,10 @@ function App() {
             viewport={{ once: true }}
           >
             <span className="card-index"></span>
-            <h3>{t.brideFullName}</h3>
-            <div className="card-rule"></div>
             <p>{t.brideParents}</p>
+            <br />
+            <div className="card-rule"></div>
+            <h3>{t.brideFullName}</h3>
           </motion.article>
         </div>
       </section>
@@ -404,10 +405,7 @@ function App() {
           </div>
 
           <div className="photo-placeholder portrait-two">
-            <img
-              src="/images/pawani.JPG"
-              alt="Naveen and Pawani together"
-            />
+            <img src="/images/pawani.JPG" alt="Naveen and Pawani together" />
             {/* <span>PORTRAIT II</span> */}
           </div>
 
@@ -425,7 +423,7 @@ function App() {
         <Lotus className="closing-lotus" />
         <span className="section-kicker">{t.footer}</span>
         <h2>
-        {t.grromShortName} <i>&</i> {t.brideShortName}
+          {t.grromShortName} <i>&</i> {t.brideShortName}
         </h2>
         <p>{t.rsvp}</p>
         <p className="closing-small">{t.rsvpText}</p>
