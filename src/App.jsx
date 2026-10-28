@@ -21,8 +21,8 @@ const COPY = {
     registration: "Marriage Registration",
     date: "Thursday, 13 May 2027",
     parents: "With the blessings of our parents",
-    groomParents: "Son of Mr. Karunadasa & Mrs. Somawathi",
-    brideParents: "Daughter of Mr. Jayathunga & Mrs. Malani",
+    groomParents: "Lovely Son of Mr. Karunadasa & Mrs. Somawathi",
+    brideParents: "Lovely Daughter of Mr. Jayathunga & Mrs. Malani",
     storyTitle: "A day woven with tradition",
     storyText:
       "With grateful hearts, we invite you to witness the beginning of our forever, surrounded by the customs and blessings of Sri Lanka.",
@@ -53,8 +53,8 @@ const COPY = {
     registration: "විවාහ ලියාපදිංචිය",
     date: "2027 මැයි 13, බ්‍රහස්පතින්දා",
     parents: "දෙමාපිය ආශීර්වාදය සමඟ",
-    groomParents: "කරුණාදාස මහතාගේ සහ සෝමාවතී මහත්මියගේ පුත්‍රයා",
-    brideParents: "ජයතුංග මහතාගේ සහ මාලනි මහත්මියගේ දියණිය",
+    groomParents: "කරුණාදාස මහතාගේ සහ සෝමාවතී මහත්මියගේ ආදරණීය පුත්‍රයා",
+    brideParents: "ජයතුංග මහතාගේ සහ මාලනි මහත්මියගේ ආදරණීය දියණිය",
     storyTitle: "සම්ප්‍රදායෙන් හැඩවන සුන්දර දිනයක්",
     storyText:
       "ශ්‍රී ලාංකීය සම්ප්‍රදායන් හා ආශීර්වාද මධ්‍යයේ අපගේ නව ජීවිත ගමනේ ආරම්භය දැකගැනීමට ඔබට ආරාධනා කරමු.",
