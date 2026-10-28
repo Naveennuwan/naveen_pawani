@@ -142,7 +142,7 @@ function Petals({ count = 18 }) {
 
 function App() {
   const [opened, setOpened] = useState(false);
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("si");
   const [musicOn, setMusicOn] = useState(false);
   const [audio, setAudio] = useState(null);
   const t = COPY[lang];
@@ -222,10 +222,10 @@ function App() {
                 <Lotus className="opening-lotus" />
                 <span className="tiny-caps">{t.seal}</span>
                 {/* <h1>N <span>&</span> P</h1> */}
-                <p className="envelope-names">Naveen & Pawani</p>
-                <div className="wax-seal">
-                  N<span>✦</span>P
-                </div>
+                <p className="envelope-names">{t.grromShortName} & {t.brideShortName}</p>
+                {/* <div className="wax-seal"> */}
+                  {/* N<span>✦</span>P */}
+                {/* </div> */}
                 <button className="open-button" onClick={openInvitation}>
                   {t.open} <span aria-hidden="true">↗</span>
                 </button>
