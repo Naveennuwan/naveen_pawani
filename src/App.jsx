@@ -395,26 +395,23 @@ function App() {
           <p>{t.galleryText}</p>
         </div>
         <div className="photo-grid">
-          <div className="photo-placeholder portrait-one">
+          {/* <div className="photo-placeholder portrait-one">
             <img
               src="/images/naveen.jpg
               "
               alt="Naveen and Pawani wedding portrait"
             />
-            {/* <span>PORTRAIT I</span> */}
           </div>
 
           <div className="photo-placeholder portrait-two">
             <img src="/images/pawani.JPG" alt="Naveen and Pawani together" />
-            {/* <span>PORTRAIT II</span> */}
-          </div>
+          </div> */}
 
           <div className="photo-placeholder portrait-three">
             <img
               src="/images/couple1.jpg"
               alt="A favourite memory of Naveen and Pawani"
             />
-            {/* <span>A FAVOURITE MEMORY</span> */}
           </div>
         </div>
       </section>
