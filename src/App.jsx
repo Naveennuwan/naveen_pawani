@@ -40,6 +40,10 @@ const COPY = {
     seal: "A day to remember",
     photoNote: "Replace these placeholders with the couple's photographs",
     addCalendar: "Save the date",
+    grromFullName: "Naveen Nuwan",
+    grromShortName: "Naveen",
+    brideFullName: "Pawani Wasana",
+    brideShortName: "Wasana",
   },
   si: {
     eyebrow: "ආදරය, පවුල සහ සම්ප්‍රදාය එක්වන මංගල්‍යය",
@@ -67,6 +71,10 @@ const COPY = {
     seal: "මතකයේ රැඳෙන දිනයක්",
     photoNote: "මෙම ස්ථානවලට යුවළගේ ඡායාරූප එක් කරන්න",
     addCalendar: "දිනය සුරකින්න",
+    grromFullName: "නවින් නුවන්",
+    grromShortName: "නවින්",
+    brideFullName: "පවනි වාසනා",
+    brideShortName: "වාසනා",
   },
 };
 
@@ -275,9 +283,9 @@ function App() {
           </div>
           <p className="invitation-line">{t.invitation}</p>
           <h1 className="names">
-            <span>Naveen Nuwan</span>
+            <span>{t.grromFullName}</span>
             <i>&</i>
-            <span>Pawani Wasana</span>
+            <span>{t.brideFullName}</span>
           </h1>
           <p className="full-name-note"> </p>
           <p className="hero-subtitle">{t.inviteLine}</p>
@@ -320,11 +328,9 @@ function App() {
             initial={{ opacity: 0, y: 24 }}
             viewport={{ once: true }}
           >
-            <span className="card-index">01 / THE GROOM</span>
+            <span className="card-index"></span>
             <h3>
-              Naveen Nuwan
-              <br />
-              Chathurangana
+            {t.grromFullName}
             </h3>
             <div className="card-rule"></div>
             <p>{t.groomParents}</p>
@@ -338,8 +344,8 @@ function App() {
             initial={{ opacity: 0, y: 24 }}
             viewport={{ once: true }}
           >
-            <span className="card-index">02 / THE BRIDE</span>
-            <h3>Pawani Wasana</h3>
+            <span className="card-index"></span>
+            <h3>{t.brideFullName}</h3>
             <div className="card-rule"></div>
             <p>{t.brideParents}</p>
           </motion.article>
@@ -419,7 +425,7 @@ function App() {
         <Lotus className="closing-lotus" />
         <span className="section-kicker">{t.footer}</span>
         <h2>
-          Naveen <i>&</i> Wasana
+        {t.grromShortName} <i>&</i> {t.brideShortName}
         </h2>
         <p>{t.rsvp}</p>
         <p className="closing-small">{t.rsvpText}</p>
